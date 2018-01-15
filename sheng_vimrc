@@ -55,3 +55,7 @@ inoremap {{ {}<ESC>i
 " Mouse control
 set mouse=a
 
+" cinfirm the command
+set confirm
+
+
