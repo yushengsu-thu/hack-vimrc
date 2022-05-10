@@ -13,12 +13,31 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-
 " Shorthand notation for plugin
-Plug 'foo/bar'
+" Plug 'foo/bar'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
+
+" Open the class content
+Plug 'kien/ctrlp.vim'
+
+" Powerline是一个状态栏插件，可以显示当前的虚拟环境、Git分支、正在编辑的文件等信息
+" Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+
+" NERD Commenter (automatically)
+Plug 'preservim/nerdcommenter'
+filetype plugin on
+
+" tagbar 輸入 :tagbar 就可以開啟 tagbar 視窗，在這個視窗裡你可以看到該檔案的所有結構體、函式、變數等
+Plug 'preservim/tagbar'
+" Plug 'majutsushi/tagbar'
+
+" Search variable, function, name (matching)
+Plug 'dyng/ctrlsf.vim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -52,8 +71,9 @@ Plug 'junegunn/vim-easy-align'
 " Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 " Plug 'lotabout/skim.vim'
 
-
 call plug#end()
+
+
 
 " vim-latex-preview settings
 autocmd Filetype tex setl updatetime=1
@@ -70,6 +90,21 @@ let g:livepreview_engine = 'pdflatex'
 
 
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Proxy (Can be faster to download packages from the github)
+" https://iter01.com/635444.html
+" 修改 ~/.vim/autoload/plug.vim 將
+" let fmt = get(g:, 'plug_url_format', 'https://git::@github.com/%s.git') 改成
+" let fmt = get(g:, 'plug_url_format', 'https://git::@hub.fastgit.org/%s.git')
+"
+" 將這行
+" \ '^https://git::@github\.com', 'https://github.com', '')
+" \ '^https://git::@hub.fastgit\.org', 'https://hub.fastgit.org', '')
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -80,7 +115,7 @@ set mouse=a
 set nu
 
 " Sets how many lines of history VIM has to remember
-set history=500
+set history=5000
 
 " Enable filetype plugins
 filetype plugin on
@@ -99,6 +134,7 @@ nmap <leader>w :w!<cr>
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
+
 
 
 
@@ -432,5 +468,9 @@ function! VisualSelection(direction, extra_filter) range
 endfunction
 
 
+
+
+" map <C-p> :LLPStartPreview<cr>
+"
 map <C-n> :NERDTreeToggle<CR>
-map <C-p> :LLPStartPreview<cr>
+" map <C-p>  .... fuzzy find file name
