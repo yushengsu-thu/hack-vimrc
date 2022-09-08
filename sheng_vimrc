@@ -95,7 +95,7 @@ let g:livepreview_engine = 'pdflatex'
 " Floding Code
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python Floding method
-set foldmethod=indent
+" set foldmethod=indent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
