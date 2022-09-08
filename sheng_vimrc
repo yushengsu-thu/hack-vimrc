@@ -1,6 +1,7 @@
 " Download Vim-plug from: https://github.com/junegunn/vim-plug.git
 " source ~/.vimrc
 " Excute :PlugInstall
+" Excute :PlugUpdate
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-plug
@@ -90,19 +91,11 @@ let g:livepreview_engine = 'pdflatex'
 
 
 
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Proxy (Can be faster to download packages from the github)
-" https://iter01.com/635444.html
-" 修改 ~/.vim/autoload/plug.vim 將
-" let fmt = get(g:, 'plug_url_format', 'https://git::@github.com/%s.git') 改成
-" let fmt = get(g:, 'plug_url_format', 'https://git::@hub.fastgit.org/%s.git')
-"
-" 將這行
-" \ '^https://git::@github\.com', 'https://github.com', '')
-" \ '^https://git::@hub.fastgit\.org', 'https://hub.fastgit.org', '')
+" Floding Code
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" python Floding method
+set foldmethod=indent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
