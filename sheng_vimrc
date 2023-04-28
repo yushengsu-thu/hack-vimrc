@@ -2,6 +2,7 @@
 " source ~/.vimrc
 " Excute :PlugInstall
 " Excute :PlugUpdate
+" vim trace code: 安裝: https://www.hanleylee.com/articles/tracing-code-in-vim/
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-plug
