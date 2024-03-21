@@ -14,6 +14,9 @@
 
 call plug#begin('~/.vim/plugged')
 
+" Add package: https://github.com/neoclide/coc.nvim (like u complete me)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Add trace code tool: Ctags, gutentags
 Plug 'ludovicchabant/vim-gutentags'
 
