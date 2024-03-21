@@ -1,5 +1,5 @@
 # Hack your personal vim
-- You could download sheng_vimrc and paste its context to ~/.vimrc
+- You could download sheng_vimrc and paste its context to `~/.vimrc`
 
 
 # Requirent
@@ -27,3 +27,8 @@ plug 'neoclide/coc.nvim', {'branch': 'release'}
 :PlugInstall
 :PlugUpdate
 ```
+
+# Note that:
+After installing the `coc.nvim`, you gotta change the config in `~/.vimrc`. You can find the example in this [link](https://github.com/neoclide/coc.nvim). But I haven't added this part into my '~/.vimrc'. I gotta deal with some redundant parts and conflict isses to merge it. 
+
+
