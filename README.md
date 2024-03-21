@@ -4,11 +4,11 @@
 
 # Requirent
 - Download Vim-plug from: https://github.com/junegunn/vim-plug.git
-'''bash
+```bash
 source ~/.vimrc
-'''
+```
 - Get into the ~/.vimrc and execute the following
-'''bash
+```bash
 :PlugInstall
 :PlugUpdate
-'''
+```
