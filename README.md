@@ -16,6 +16,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install node
 nvm install 14.17.0
 ```
+
+# Install pacakges
 - (coc.nvim package) Get into the `~/.vimrc` and add
 ```bash
 plug 'neoclide/coc.nvim', {'branch': 'release'}
