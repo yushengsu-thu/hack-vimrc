@@ -5,6 +5,11 @@
 # Requirent
 - (basic packages) Download Vim-plug and follow the instructions at [link](https://github.com/junegunn/vim-plug.git)
 ```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+and then
+```bash
 source ~/.vimrc
 ```
 - (coc.nvim package) If you could install nodejs follow this [link](https://github.com/neoclide/coc.nvim). If you cannot install nodejs please use nvm as follows:
