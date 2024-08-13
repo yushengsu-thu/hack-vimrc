@@ -12,6 +12,7 @@ and then
 ```bash
 source ~/.vimrc
 ```
+vim ~/.vimrc
 ```vim
 :PlugInstall
 :PlugUpdate
