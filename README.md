@@ -8,14 +8,14 @@
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-and then
-```bash
-source ~/.vimrc
-```
-vim ~/.vimrc
+and then `vim ~/.vimrc`
 ```vim
 :PlugInstall
 :PlugUpdate
+```
+and then
+```bash
+source ~/.vimrc
 ```
 
 - (coc.nvim package) If you could install nodejs follow this [link](https://github.com/neoclide/coc.nvim). If you cannot install nodejs please use nvm as follows:
