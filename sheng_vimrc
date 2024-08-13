@@ -2,7 +2,7 @@
 " source ~/.vimrc
 " Excute :PlugInstall
 " Excute :PlugUpdate
-" vim trace code: 安裝: https://www.hanleylee.com/articles/tracing-code-in-vim/
+" vim trace code: Install: https://www.hanleylee.com/articles/tracing-code-in-vim/
 " https://larrylu.blog/vscode-tips-fe3320f9032a
 " brew install global
 " brew install universal-ctags
@@ -33,7 +33,7 @@ Plug 'junegunn/vim-easy-align'
 " Open the class content
 Plug 'kien/ctrlp.vim'
 
-" Powerline是一个状态栏插件，可以显示当前的虚拟环境、Git分支、正在编辑的文件等信息
+" Powerline is a status bar plugin that can display information such as the current virtual environment, Git branch, and the file being edited.
 " Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -43,7 +43,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdcommenter'
 filetype plugin on
 
-" tagbar 輸入 :tagbar 就可以開啟 tagbar 視窗，在這個視窗裡你可以看到該檔案的所有結構體、函式、變數等
+" Tagbar: Enter:tagbar to open the Tagbar window, where you can see all the structures, functions, variables, etc., of the file.
 Plug 'preservim/tagbar'
 " Plug 'majutsushi/tagbar'
 
@@ -482,21 +482,21 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Trace code: gutentags
 "
-" gutentags搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归 "
+" Gutentags searches for project directory markers and stops recursing to the upper directory level when it encounters these files or directory names. "
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 
-" 所生成的数据文件的名称 "
+" The name of the generated data file "
 let g:gutentags_ctags_tagfile = '.tags'
 
-" 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录 "
+" Automatically place all generated tags files into the ~/.cache/tags directory to avoid cluttering the project directory. "
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
-" 检测 ~/.cache/tags 不存在就新建 "
+" Check if ~/.cache/tags does not exist, and create it if necessary "
 if !isdirectory(s:vim_tags)
    silent! call mkdir(s:vim_tags, 'p')
 endif
 
-" 配置 ctags 的参数 "
+" "Configure the parameters for ctags "
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
