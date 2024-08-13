@@ -12,6 +12,11 @@ and then
 ```bash
 source ~/.vimrc
 ```
+```vim
+:PlugInstall
+:PlugUpdate
+```
+
 - (coc.nvim package) If you could install nodejs follow this [link](https://github.com/neoclide/coc.nvim). If you cannot install nodejs please use nvm as follows:
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
