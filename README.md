@@ -42,7 +42,7 @@ nvm install 14.17.0
 # Install packages
 - (coc.nvim package) Get into the `~/.vimrc` and add
 ```bash
-plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
 - Finally, execute the following command in `~/.vimrc`:
 ```bash
