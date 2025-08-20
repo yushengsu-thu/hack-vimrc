@@ -1,6 +1,4 @@
 " Download Vim-plug from: https://github.com/junegunn/vim-plug.git
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " source ~/.vimrc
 " Excute :PlugInstall
 " Excute :PlugUpdate
@@ -16,8 +14,8 @@
 
 call plug#begin('~/.vim/plugged')
 
-" Add package: https://github.com/neoclide/coc.nvim (like u complete me)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Refer to my github to solve issue: https://github.com/yushengsu-thu/hack-vimrc/blob/master/README.md
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Add trace code tool: Ctags, gutentags
 Plug 'ludovicchabant/vim-gutentags'
@@ -502,3 +500,5 @@ endif
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+
+let g:coc_disable_startup_warning = 1
